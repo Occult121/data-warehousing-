@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Warehousing Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: #1e293b;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 400;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #38bdf8, #6366f1);
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .container {
+      padding: 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      margin-bottom: 15px;
+      color: #1e293b;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e293b;
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media(max-width: 600px) {
+      .hero h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Data Warehousing Project</h1>
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#architecture">Architecture</a>
+    <a href="#models">Models</a>
+    <a href="#tools">Tools</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Transforming Data into Insights</h2>
+  <p>A complete Data Warehousing implementation project</p>
+</section>
+
+<div class="container">
+
+  <section id="overview" class="section">
+    <h2>Overview</h2>
+    <p>This project demonstrates how raw data is processed and transformed into meaningful insights using Data Warehousing techniques including ETL, schema design, and analytical queries.</p>
+  </section>
+
+  <section id="architecture" class="section">
+    <h2>Architecture</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Data Sources</h3>
+        <p>Raw data collected from CSV and Excel files.</p>
+      </div>
+      <div class="card">
+        <h3>ETL Process</h3>
+        <p>Extract, transform, and load data into structured format.</p>
+      </div>
+      <div class="card">
+        <h3>Data Warehouse</h3>
+        <p>Central repository optimized for analytical queries.</p>
+      </div>
+      <div class="card">
+        <h3>Analysis</h3>
+        <p>Generate insights using SQL queries and reports.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="models" class="section">
+    <h2>Data Models</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Star Schema</h3>
+        <p>Simple structure with fact and dimension tables for fast queries.</p>
+      </div>
+      <div class="card">
+        <h3>Snowflake Schema</h3>
+        <p>Normalized structure reducing redundancy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tools" class="section">
+    <h2>Tools & Technologies</h2>
+    <div class="cards">
+      <div class="card">SQL</div>
+      <div class="card">MySQL / Oracle</div>
+      <div class="card">Python</div>
+      <div class="card">Excel / CSV</div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 Data Warehousing Project</p>
+</footer>
+
+</body>
+</html>
